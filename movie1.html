@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    
+    <!-- Boostrap 4  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="/slider.css">
+
+    <title>Movies</title>
+
+    <style>
+        html{
+            position: relative;
+            min-width: 1024px;
+            min-height: 784px;
+            height: 100%;
+            
+        }
+        .youtube
+        {
+              background-color:transparent;
+              color: white;
+              padding: 20px;
+              border-radius: 20px;
+        }
+        #btn
+        {
+              /* align-items: flex-start; */
+              border-radius: 20px;
+              outline: none;
+        }
+        #heading3
+        {
+            font-size: 4em;
+            color:rgb(243, 243, 243);
+            text-shadow: 0 0 30px #ff004c;
+        }
+        /* #heading3::after{
+            content: attr(data-text);
+            position: absolute;
+            /* left: 40%; */
+            /* top: 0;
+            z-index: -1; */
+            /* color:#00ff00 */
+            /* padding: 0 20px;} */
+    </style>
+</head>
+<body style="background: url(/images/1.jpg); background-size: cover; overflow-x: hidden;">
+    <div style="background: url(/images/1.jpg);background-size: cover; height: 200%;">
+      <div class="row youtube" >
+          <button id="back" style="top: 50%; width: 5%; height:15% ; outline: none; background-color: black; color: white;">Back</button>
+          <h3 id="heading3" data-text="Search_Movie" class="text-center col-md-12"><i class="fab fa-youtube"></i>&nbsp; Search_Movie</h3>
+      </div>
+      <div class="row my-2" >
+          <div class="" style=" display:inline;">
+            <div id="box1" class="col-md-8 ">
+                <form>
+                    <div> <!--class="form-group"-->
+                       <input id="data" type="search" placeholder="Search any movie here" style="border-radius:20px ; width: 380px; background-color:white; outline: thin; position: relative; left:500px ">
+                    </div>
+                </form>
+                <form action="">
+                    <div>
+                        <input id="btn" type="submit" style="color:white; background-color: red;width: 100px; position: absolute; left: 900px; top: 1%;" value="Search"></input>
+                     </div>
+                  </form> <br>
+                  <div id="box"  style="width:200% ; position: relative; left:210px;">
+
+                  </div>
+            </div>
+            <div  class="col-md-4" style="display: flex; flex-direction:column">
+               <div id='box2' class="card card-body container" style="background-color: rgba(189, 76, 76, 0); width:310%; color:white; left:56%;">
+                  <!-- <h6>Discription Box</h6> --> 
+                  <br> <br>
+               </div> <br>
+                <!-- <i class="fas fa-search"></i> -->
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <div class="slider container">
+        <div class="slider-track">
+            <div class="slide">
+                <img src="/images/Akira.jfif" alt="">
+            </div>
+            <div class="slide">
+                <img src="/images/KGF.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/images/TheLionKing.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="/images/ThewonderWomen.jpg" alt="">
+           </div>
+           <div class="slide">
+                <img src="/images/MotherIndia.jfif" alt="">
+           </div>
+           <div class="slide">
+                <img src="/images/Raone.jpg" alt="">
+           </div>
+           <div class="slide">
+                <img src="/images/ThewonderWomen.jpg" alt="">
+           </div>
+           <div class="slide">
+                <img src="/images/Joker.jfif" alt="">
+           </div>
+           <div class="slide">
+                <img src="/images/JAWs.jfif" alt="">
+           </div>
+           <div class="slide">
+                <img src="/images/Avatar.jfif" alt="">
+           </div>
+
+           <div class="slide">
+               <img src="/images/Akira.jfif" alt="">
+           </div>
+           <div class="slide">
+               <img src="/images/KGF.jpg" alt="">
+           </div>
+           <div class="slide">
+               <img src="/images/TheLionKing.jpg" alt="">
+           </div>
+           <div class="slide">
+               <img src="/images/ThewonderWomen.jpg" alt="">
+          </div>
+          <div class="slide">
+               <img src="/images/MotherIndia.jfif" alt="">
+          </div>
+          <div class="slide">
+               <img src="/images/Raone.jpg" alt="">
+          </div>
+          <div class="slide">
+               <img src="/images/ThewonderWomen.jpg" alt="">
+          </div>
+          <div class="slide">
+               <img src="/images/Joker.jfif" alt="">
+          </div>
+          <div class="slide">
+               <img src="/images/JAWs.jfif" alt="">
+          </div>
+          <div class="slide">
+               <img src="/images/Avatar.jfif" alt="">
+          </div>
+
+        </div>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>

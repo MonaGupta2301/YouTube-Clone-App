@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    
+    <!-- Boostrap 4  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Start</title>
+    <style>
+        #box{
+            background:url(/images/play.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            height:753px;
+            width:100%;
+            align-items: center;
+            }
+        #innerbox{
+            width:1000px;
+            height:650px;
+            background-color: rgba(0,0,0,0.7);
+            border: none;
+            border-radius: 100px;
+            box-shadow: 0 0 30px white;
+            position: relative;
+            top: 5%;
+        }
+        h1
+        {
+            position: relative;
+            font-size: 5vw;
+            color:transparent;
+            -webkit-text-stroke: 0.01vw white;
+            text-transform: uppercase;
+        }
+        h1::before{
+           content: attr(data-text);
+           position: absolute;
+           top: 0;
+           left:0;
+           width: 100%;
+           height: 100%;
+           color:white;
+           -webkit-text-stroke: 0.01vw white;
+           border-right: 2px solid white;
+           overflow: hidden;
+           animation: animate 2s linear infinite;
+        }
+        @keyframes animate
+        {
+            0%,10%,100%
+            {
+               width: 0;
+            }
+            70%,90%
+            {
+               width:100%;
+            }
+        }
+        h2
+        {
+            position: relative;
+            font-size: 3vw;
+            color:transparent;
+            -webkit-text-stroke: 0.01vw white;
+            text-transform: uppercase;
+        }
+        h2::before{
+           content: attr(data-text);
+           position: absolute;
+           top: 0;
+           left:0;
+           width: 100%;
+           height: 100%;
+           color:white;
+           -webkit-text-stroke: 0.01vw white;
+           border-right: 2px solid white;
+           overflow: hidden;
+           animation: animate 2s linear infinite;
+        }
+        @keyframes animate
+        {
+            0%,10%,100%
+            {
+               width: 0;
+            }
+            70%,90%
+            {
+               width:100%;
+            }
+        }
+        .btn:hover
+        {
+            font-size: 24px;
+            align-items: center;
+            box-shadow: 0 30px white;
+        }
+    </style>
+</head>
+<body>
+     <div id=box>
+           <div id="innerbox"  class="container">
+               <div class="h1" style="width: 35%; position: relative; left:30%; top: 30%;">
+                  <h1 data-text="Search..." >Search...</h1>
+               </div>
+               <div class="h2" style="width: 50%; position: relative; left:15%; top: 35%;">
+                <h2 data-text="MOVIES_&_TV_SHOWS" >MOVIES_&_TV_SHOWS</h2>
+             </div>
+             <div class="btn" style="background :linear-gradient(to left bottom,red,rgb(255, 22, 61),orange); height: 40px; width: 200px; border-radius: 30px; position: relative; left:35%; top: 50%; box-shadow: 0 0 30px red; ">
+                 <a href="/movie1.html" style="text-decoration: none; color: black;"> Watch Movies</a>
+             </div> 
+             <div class="btn" style="background :linear-gradient(to left bottom,red,rgb(255, 22, 61),orange); height: 40px; width: 200px; border-radius: 30px; position: relative; left:40%; top: 50%; box-shadow: 0 0 30px red; ">
+                <a href="/tvshow.html" style="text-decoration: none; color: black;"> Watch Tv_Shows</a>
+            </div>
+           </div>
+     </div>
+</body>
+</html>
