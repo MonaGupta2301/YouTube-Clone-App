@@ -12,6 +12,7 @@ val.addEventListener('keyup',(e)=>{
     e.preventDefault()
     var val = e.target.value    
 })
+
 const btton=document.getElementById('btn')
     btton.addEventListener('click', (e)=>{
         e.preventDefault()
