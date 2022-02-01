@@ -34,6 +34,9 @@ body{
     align-items: center;
     padding: 0px;
 }
+
+
+
 .slide:hover{
     height: 230px;
     width: 280px;
