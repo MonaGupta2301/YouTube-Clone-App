@@ -54,8 +54,6 @@ const btton=document.getElementById('btn')
            }
         }
         xhr.send()
-       
-
     })
 // val.onkeydown=(e)=>{
 //    const b=document.getElementById('box')
